@@ -1,3 +1,5 @@
+package entities;
+
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
@@ -42,7 +44,7 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "A Rectangle with width="
+        return "A entities.Rectangle with width="
                 + getWidth()
                 + " and length="
                 + getLength()

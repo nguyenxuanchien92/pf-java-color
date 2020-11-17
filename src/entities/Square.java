@@ -1,4 +1,8 @@
-public class Square extends Rectangle {
+package entities;
+
+import service.Colorable;
+
+public class Square extends Rectangle implements Colorable {
     public Square() {
     }
 
@@ -31,9 +35,14 @@ public class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "A Square with side="
+        return "A entities.Square with side="
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public String howToColor() {
+        return "Sơn theo tính cách";
     }
 }
